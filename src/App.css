@@ -3,24 +3,28 @@ body {
   background-color: white;
   margin: 0;
   font-family: 'Helvetica', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 /* Style the button */
 .button {
-  background-color: white; /* Set the background color to white */
-  color: black; /* Set the text color to black */
-  font-size: 24px; /* Adjust the font size */
-  padding: 16px 32px; /* Add padding to the button */
+  background-color: white; /* White background color for the button */
+  color: black; /* Black text color */
+  font-size: 69px; /* Font size set to 69 */
+  font-weight: 800; /* Extremely bold */
+  padding: 32px 64px; /* Adjusted padding for the button */
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  margin: 0 auto; /* Center the button horizontally */
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Transition for hover effect */
 }
 
 /* Add hover effect to the button */
 .button:hover {
-  background-color: #45a6d6; /* Darker blue on hover */
+  background-color: #39ff14; /* Glowing hacker green on hover */
+  color: black; /* Black text color on hover */
+  box-shadow: 0 0 10px 2px #39ff14; /* Glow effect on hover */
 }
